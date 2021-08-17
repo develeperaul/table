@@ -25,7 +25,7 @@
       :style="{width: `${100*json.length}%`}" 
         />
       </div>
-      <MainNumber class="main-number--pos" color="red" text="-11111" mt="130" mb="75"/>  
+      <MainNumber  color="red" text="-11111" mt="130" mb="75"/>  
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"
@@ -34,15 +34,7 @@
       :style="{width: `${100*json.length}%`}" 
         />
       </div>
-      <MainNumber class="main-number--pos" color="red" text="65489" mt="130" mb="75">   
-            <template
-              slot="before"
-              >
-              к = 11,6
-            </template>
-      </MainNumber>
-
-      <!-- </div> completed failed-->
+      <MainNumber  color="red" text="65489" mt="130" mb="75" before="к = 11,6"/>   
     </ColumnTable>
 
   </div>
@@ -52,7 +44,7 @@
 import ColumnTable from "components/ColumnTable";
 import MainNumber from "components/MainNumber";
 import BorderLine from "components/BorderLine";
-import TableGradientLine from "components/TableGradientLine"
+import TableGradientLine from "components/TableGradientLine";
 export default {
   // name: 'ComponentName',
   components: {
@@ -82,15 +74,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .date {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 68.09px;
-    margin-bottom: 75px;
-    
-    margin-top: 21px;
-  }
-  .main-number--pos{
-    margin-top: 95px;
-  }
+
 </style>
