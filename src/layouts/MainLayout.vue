@@ -2,21 +2,24 @@
   <!-- <Table colorTitle="#FF0000" colorGradient="green"/> -->
   <div>
 
-  <NAS1 />
+  <!-- <NAS1 /> -->
   <!-- <PRODZHIZN1/> -->
+  <PRODZHIZN2/>
   </div>
 </template>
 
 <script>
 import Table from "components/Table";
 import NAS1 from "components/NAS1";
-import PRODZHIZN1 from "components/PRODZHIZN1"
+import PRODZHIZN1 from "components/PRODZHIZN1";
+import PRODZHIZN2 from "components/PRODZHIZN2";
 export default {
   name: 'MainLayout',
   components: {
     Table,
     NAS1,
-    PRODZHIZN1
+    PRODZHIZN1,
+    PRODZHIZN2
   }
 }
 </script>
