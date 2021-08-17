@@ -34,7 +34,7 @@
       :style="{width: `${100*json.length}%`}" 
         />
       </div>
-      <MainNumber  color="red" text="65489" mt="130" mb="75" before="к = 11,6"/>   
+      <MainNumber  color="red" text="65489" mt="130" mb="75" before="к = 11,6" />   
     </ColumnTable>
 
   </div>

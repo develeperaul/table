@@ -14,10 +14,17 @@
           {{text}}
       
         <img 
-        v-if="execution"
-        class="tw-inline-block tw-align-baseline"
-        style="margin-left: 60px"
-        :src="require('./icons/' + execution + '.svg')">
+          v-if="trend"
+          class="tw-inline-block tw-align-baseline"
+          
+          :src="require('./icons/trend' + trend + '.svg')">
+        
+        
+        <img 
+          v-if="execution"
+          class="tw-inline-block tw-align-baseline"
+          style="margin-left: 60px"
+          :src="require('./icons/' + execution + '.svg')">
       </span>
       <span class="subtitle"
       v-if="before"
@@ -52,6 +59,10 @@ export default {
     },
 
     execution: {
+      required: false,
+      type: String
+    },
+    trend: {
       required: false,
       type: String
     },
