@@ -1,56 +1,64 @@
 <template>
+<!-- таблица NAS5 PROD_ZHIZN4 NAS4 PROD_ZHIZN3-->
     <div class="tw-flex tw-w-full tw-relative">
-    <div
-      class=" tw-flex tw-items-center  tw-absolute"
-      style="width: 100%;  top: 95px;  "
-      :style="{ background:[colorType=='#FF0000'?  'linear-gradient(270deg, #00CD77 0%, #6A7186 41.01%);' : 'linear-gradient(270deg, #F30101 0%, #6A7186 41.01%)']}"
-    >
-      <span
-        class=" text-gradient"
-      >
-        Число родившихся (в т.ч. на 1000 человек населения) 
-      </span>
-    </div>
-    <div
+      <TableGradientLine 
+      v-bind="{colorGradient}"
+      class="tw-absolute"
+      style="top: 95px;  "/>
+      
+      <ColumnTable 
       v-for="(item, index) in json"
       :key="index"
-      class="tw-flex tw-flex-col "
-      :class="`tw-w-1/${json.length}`"
-      :style="[{background:(index+1)%2==0 ? ' rgba(196, 196, 196, 0.05)' : ''}, {paddingLeft:index>0 ? '30px': ''}]"
-    >
-      <span
-        class="tw-text-xl date"
-        style="margin-bottom: 20px"
-      >2018</span>
-      <div class="tw-flex tw-flex-col">
-        <span class="tw-text-5xl tw-font-bold title"
-        :style="{color: colorTitle}">
-          47010
-        </span>
-        <span class="tw-mb-2 subtitle">
-          к = 11,6
-        </span>
-          <Cell v-bind="{item: item.info, index}"/>
-          
-      </div>
-      {{'261(10231)'.search(/[(]/)}}
+      v-bind="{index, item}"
+      >
+        <span
+          class="tw-text-xl date"
+          style="margin-bottom: 20px"
+        >2018</span>
+        <div class="tw-flex tw-flex-col">
+          <MainNumber :color="colorTitle" 
+          style="margin-top: 45px; margin-bottom: 50px; ">
+            <template
+              slot="before"
+              >
+              к = 11,6
+            </template>
+              
+          </MainNumber>
+            <Cell v-bind="{item: item.info, index}"/>
+            
+        </div>
+        <!-- {{'261(10231)'.search(/[(]/)}} -->
+      </ColumnTable>
     </div>
     
-  </div>
+
 
 </template>
 
 <script>
 import Cell from "components/Cell";
+import TableGradientLine from "components/TableGradientLine";
+import MainNumber from "components/MainNumber"
+
+import ColumnTable from "components/ColumnTable"
 export default {
   components : {
-    Cell
+    ColumnTable,
+
+    Cell,
+    TableGradientLine,
+    MainNumber
   },
   // name: 'ComponentName',
   props: {
     colorTitle: {
-      default: '#01F859',
+      required: true,
       type: String
+    },
+    colorGradient: {
+     required: true,
+     type: String
     }
   },
   data () {
@@ -140,17 +148,8 @@ export default {
     margin-bottom: 40px;
     margin-top: 21px;
   }
-  .title {
-    font-size: 110px;
-    line-height: 110px;
-    font-weight: 700;
-    margin-top: 40px;
-  }
-  .subtitle {
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 600;
-  }
+
+
   .text-gradient {
     font-size: 40px;
     line-height: 54.47px;
