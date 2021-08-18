@@ -12,7 +12,7 @@
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"
-        text="Миграционный прирост"
+        text="Трудоспособное население, оба пола "
         class="tw-absolute"
       :style="{width: `${100*json.length}%`}" 
         />
@@ -41,7 +41,7 @@
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="red"
-        text="Миграционный прирост"
+        text="Старше трудоспособного населения, оба пола  "
         class="tw-absolute"
       :style="{width: `${100*json.length}%`}" 
         />

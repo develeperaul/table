@@ -1,6 +1,6 @@
 <template>
   <div>
-  <!-- <NAS1 />
+  <NAS1 />
   <NAS4 />
   <NAS5 />
   <PRODZHIZN1 style="margin-right:100px"/>
@@ -8,8 +8,8 @@
   <PRODZHIZN3/>
   <PRODZHIZN4/>
   <PRODZHIZN5/>
-  <ZP1/> -->
-  <PRODZHIZN5 style="margin-right:100px"/>
+  <ZP1/>
+  
   </div>
 </template>
 

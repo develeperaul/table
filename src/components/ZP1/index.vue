@@ -18,7 +18,7 @@
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"
-        text="Миграционный прирост"
+        text="Индекс потребительских цен на товары и услуги"
         class="tw-absolute"
       :style="{width: `${100*json.length}%`}" 
         />
