@@ -13,8 +13,8 @@
       :style="{marginLeft:[index>0 ? '-30px': '']}"/>
       </span>
 
-      <MainNumber color="green" text="46541651" mb="35" after="план"/>  
-      <MainNumber color="green" text="46541651" mb="35" execution="failed" after="факт"/>  
+      <MainNumber color="red" text="110,4%" mb="35" after="план"/>  
+      <MainNumber color="green" text="111,4%" mb="35" execution="completed" after="факт"/>  
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"
@@ -23,23 +23,8 @@
       :style="{width: `${100*json.length}%`}" 
         />
       </div>
-      <div class="tw-relative">
-        <MainNumber  color="red" text="-11111" mt="130" mb="75"/>  
-        <img width="52px" height="109" v-if="index+1==json.length" class="people" src="../MainNumber/icons/man.svg" alt="">
-      </div>
+        <MainNumber  color="red" :text="item.title" mt="130" mb="75" trend="up"/>  
 
-      <div class="tw-w-full tw-relative">
-        <TableGradientLine v-if="index<1" colorGradient="green"
-        text="Миграционный прирост"
-        class="tw-absolute"
-      :style="{width: `${100*json.length}%`}" 
-        />
-      </div>
-      <div class="tw-relative">
-        <MainNumber  color="red" text="65489" mt="130" mb="75"/>   
-        <img width="52px" height="109" v-if="index+1==json.length" class="people" src="../MainNumber/icons/woman.svg" alt="">
-
-      </div>
     </ColumnTable>
 
   </div>
@@ -65,15 +50,15 @@ export default {
       json: [
         {
           date: 2018,
-          title: 4051005,
+          title: '72,06%',
         },
         {
           date: 2018,
-          title: 4051005,
+          title: '72,06%',
         },
         {
           date: 2018,
-          title: 4051005,
+          title: '72,08%',
         }
       ]
     }

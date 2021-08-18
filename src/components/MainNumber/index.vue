@@ -5,7 +5,7 @@
     :style="[{marginTop: mt+'px'},{marginBottom: mb+'px'}]">
       <span 
       v-if="after"
-      class="subtitle">
+      class="after">
         <!-- <slot name="after" class="subtitle"></slot> -->
         {{after}}
       </span>
@@ -16,17 +16,17 @@
         <img 
           v-if="trend"
           class="tw-inline-block tw-align-baseline"
-          
           :src="require('./icons/trend' + trend + '.svg')">
-        
         
         <img 
           v-if="execution"
           class="tw-inline-block tw-align-baseline"
           style="margin-left: 60px"
           :src="require('./icons/' + execution + '.svg')">
+        
+        
       </span>
-      <span class="subtitle"
+      <span class="before"
       v-if="before"
       style="margin-top: 25px">
         {{before}}
@@ -88,7 +88,14 @@ export default {
       font-weight: 700;
       
     }
-    .subtitle {
+    .after {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      margin-left: 6px;
+    }
+    .before {
       font-size: 40px;
       line-height: 40px;
       font-weight: 600;

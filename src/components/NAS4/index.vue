@@ -4,7 +4,8 @@
       <TableGradientLine 
       colorGradient="green"
       class="tw-absolute"
-      style="top: 95px;  "/>
+      style="top: 95px;"
+      text="Число родившихся (в т.ч. на 1000 человек населения) "/>
       
       <ColumnTable 
       v-for="(item, index) in json"
@@ -17,9 +18,8 @@
           style="margin-bottom: 20px"
         >2018</span>
         <div class="tw-flex tw-flex-col">
-          <MainNumber color="red" text="47010" mt="80" mb="50" before="к = 11,6"
+          <MainNumber color="green" text="47010" mt="80" mb="50" before="к = 11,6"
           />
-
             <Cell v-bind="{item: item.info, index}"/>
             
         </div>

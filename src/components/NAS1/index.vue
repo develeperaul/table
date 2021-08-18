@@ -16,25 +16,48 @@
       :style="{marginLeft:[index>0 ? '-30px': '']}"/>
       </span>
 
-      <MainNumber color="green" text="46541651" mb="120"/>  
+      <MainNumber color="green" :text="item.title" mb="120"/>  
 
-      <div class="tw-w-full tw-relative">
-        <TableGradientLine v-if="index<1" colorGradient="green"
-        text="Миграционный прирост"
-        class="tw-absolute"
-      :style="{width: `${100*json.length}%`}" 
-        />
+      <div>
+        <div class="tw-w-full tw-relative">
+          <TableGradientLine v-if="index<1" colorGradient="green"
+          text="Миграционный прирост"
+          class="tw-absolute"
+        :style="{width: `${100*json.length}%`}" 
+          />
+        </div>
+        <div class="tw-relative">
+          <MainNumber
+            color="red"
+            text="-8858"
+            mt="130"
+            mb="75"
+            />
+          <Button v-if="index+1==json.length" icon="next" class="tw-absolute tw-top-0 tw-right-0 tw-transform tw-translate-y-1/3"/>
+        </div>
       </div>
-      <MainNumber  color="red" text="-11111" mt="130" mb="75"/>  
 
-      <div class="tw-w-full tw-relative">
-        <TableGradientLine v-if="index<1" colorGradient="green"
-        text="Миграционный прирост"
-        class="tw-absolute"
-      :style="{width: `${100*json.length}%`}" 
-        />
+      <div>
+        <div class="tw-w-full tw-relative">
+          <TableGradientLine v-if="index<1" colorGradient="green"
+          text="Миграционный прирост"
+          class="tw-absolute"
+        :style="{width: `${100*json.length}%`}" 
+          />
+        </div>
+        <div class="tw-relative">
+          <MainNumber
+            color="red"
+            text="65489"
+            mt="130"
+            mb="75"
+            before="к = 11,6"
+            class=""/>   
+          <Button v-if="index+1==json.length" icon="next" class="tw-absolute tw-top-0 tw-right-0 tw-transform tw-translate-y-1/3"/>
+
+        </div>
+        
       </div>
-      <MainNumber  color="red" text="65489" mt="130" mb="75" before="к = 11,6" />   
     </ColumnTable>
 
   </div>
@@ -45,13 +68,15 @@ import ColumnTable from "components/ColumnTable";
 import MainNumber from "components/MainNumber";
 import BorderLine from "components/BorderLine";
 import TableGradientLine from "components/TableGradientLine";
+import Button from "components/Button";
 export default {
   // name: 'ComponentName',
   components: {
     ColumnTable,
     MainNumber,
     BorderLine,
-    TableGradientLine
+    TableGradientLine,
+    Button
   },
   data () {
     return {
@@ -61,11 +86,11 @@ export default {
           title: 4051005,
         },
         {
-          date: 2018,
+          date: 2019,
           title: 4051005,
         },
         {
-          date: 2018,
+          date: 2020,
           title: 4051005,
         }
       ]

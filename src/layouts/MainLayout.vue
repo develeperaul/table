@@ -1,25 +1,42 @@
 <template>
-  <!-- <Table colorTitle="#FF0000" colorGradient="green"/> -->
   <div>
-
-  <!-- <NAS1 /> -->
-  <!-- <PRODZHIZN1/> -->
-  <PRODZHIZN2/>
+  <!-- <NAS1 />
+  <NAS4 />
+  <NAS5 />
+  <PRODZHIZN1 style="margin-right:100px"/>
+  <PRODZHIZN2  style="margin-right:220px"/>
+  <PRODZHIZN3/>
+  <PRODZHIZN4/>
+  <PRODZHIZN5/>
+  <ZP1/> -->
+  <PRODZHIZN5 style="margin-right:100px"/>
   </div>
 </template>
 
 <script>
 import Table from "components/Table";
 import NAS1 from "components/NAS1";
+import NAS4 from "components/NAS4";
+import NAS5 from "components/NAS5";
 import PRODZHIZN1 from "components/PRODZHIZN1";
 import PRODZHIZN2 from "components/PRODZHIZN2";
+import PRODZHIZN3 from "components/PRODZHIZN3";
+import PRODZHIZN4 from "components/PRODZHIZN4";
+import PRODZHIZN5 from "components/PRODZHIZN5";
+import ZP1 from "components/ZP1";
 export default {
   name: 'MainLayout',
   components: {
     Table,
     NAS1,
+    NAS4,
+    NAS5,
     PRODZHIZN1,
-    PRODZHIZN2
+    PRODZHIZN2,
+    PRODZHIZN3,
+    PRODZHIZN4,
+    PRODZHIZN5,
+    ZP1
   }
 }
 </script>
@@ -32,4 +49,5 @@ export default {
     
     margin-top: 21px;
   }
+
 </style>

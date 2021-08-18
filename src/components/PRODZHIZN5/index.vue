@@ -13,9 +13,7 @@
       :style="{marginLeft:[index>0 ? '-30px': '']}"/>
       </span>
 
-      <MainNumber color="green" text="46541651" mb="35" after="план"/>  
-      <MainNumber color="green" text="46541651" mb="35" execution="failed" after="факт"/>  
-
+      <MainNumber color="green" :text="item.title" mb="120"/>  
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"
         text="Миграционный прирост"
@@ -25,7 +23,7 @@
       </div>
       <div class="tw-relative">
         <MainNumber  color="red" text="-11111" mt="130" mb="75"/>  
-        <img width="52px" height="109" v-if="index+1==json.length" class="people" src="../MainNumber/icons/man.svg" alt="">
+        <img width="52px" height="109" v-if="index+1==json.length" class="arrow" src="../MainNumber/icons/up.svg" alt="">
       </div>
 
       <div class="tw-w-full tw-relative">
@@ -37,7 +35,7 @@
       </div>
       <div class="tw-relative">
         <MainNumber  color="red" text="65489" mt="130" mb="75"/>   
-        <img width="52px" height="109" v-if="index+1==json.length" class="people" src="../MainNumber/icons/woman.svg" alt="">
+        <img width="52px" height="109" v-if="index+1==json.length" class="arrow" src="../MainNumber/icons/down.svg" alt="">
 
       </div>
     </ColumnTable>
@@ -81,11 +79,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
- .people{
+ .arrow{
    position: absolute;
    top: 50%;
    right: -82px;
-   transform: translateY(-25%);
+   
    
  }
 </style>

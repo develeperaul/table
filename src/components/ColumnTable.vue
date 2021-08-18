@@ -4,7 +4,8 @@
 
       class="tw-flex tw-flex-col "
       :class="`tw-w-1/3`"
-      :style="[{background:(index+1)%2==0 ? ' rgba(196, 196, 196, 0.05)' : ''}, {paddingLeft:index>0 ? '30px': ''}]"
+      :style="[{background:(index+1)%2==0 ? ' rgba(196, 196, 196, 0.05)' : ''}, {paddingLeft:index>0 ? '30px': ''}, {paddingBottom: `${pb}px`}]"
+      
     >
 
     <slot></slot>
@@ -22,6 +23,11 @@ export default {
     item: {
       type: Object,
       required: true,
+    },
+    pb: {
+      type: String,
+      require: false,
+      default: 0
     }
   },
   // name: 'ComponentName',
