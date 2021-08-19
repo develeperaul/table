@@ -14,7 +14,7 @@
       </span>
 
       <MainNumber color="red" text="110,4%" mb="35" after="план"/>  
-      <MainNumber color="green" text="111,4%" mb="35" execution="completed" after="факт"/>  
+      <MainNumber color="green" text="111,4%" mb="70" execution="completed" after="факт"/>  
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"
