@@ -1,14 +1,17 @@
 
 <template>
 <!-- Большие цифры -->
-    <div class="tw-flex tw-flex-col"
+    
+    <div class="tw-flex tw-flex-col "
     :style="[{marginTop: mt+'px'},{marginBottom: mb+'px'}]">
+    
       <span 
       v-if="after"
       class="after">
         <!-- <slot name="after" class="subtitle"></slot> -->
         {{after}}
       </span>
+        
       <span class="tw-text-5xl tw-font-bold title"
         :style="[{color: [color == 'green' ? '#01F859': color == 'red' ? '#FF0000' : color == 'orange' ? '#FF4D00' : '']},{fontSize: fs+'px'}, {lineHeight: lh+'px'}]">
           {{text}}
@@ -43,7 +46,6 @@ export default {
   props: {
     color: {
       required: false,
-      default: '#ffffff',
       type: String
     },
     text: {
@@ -98,8 +100,8 @@ export default {
       
     }
     .after {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 27px;
+      line-height: 27px;
       font-weight: 400;
       margin-bottom: 20px;
       margin-left: 6px;
