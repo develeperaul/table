@@ -27,7 +27,7 @@ export default {
     pb: {
       type: String,
       require: false,
-      default: 0
+      default: "55"
     }
   },
   // name: 'ComponentName',
