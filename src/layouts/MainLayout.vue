@@ -12,7 +12,8 @@
   <!-- <TheBed/> -->
   <!-- <TheBed2/> -->
   <!-- <TheSport/> -->
-  <TheVol/>
+  <!-- <TheVol/> -->
+  <TheGar/>
   
   </div>
 </template>
@@ -32,6 +33,7 @@ import TheBed from "components/TheBed";
 import TheBed2 from "components/TheBed2";
 import TheSport from "components/TheSport";
 import TheVol from "components/TheVol";
+import TheGar from "components/TheGar";
 export default {
   name: 'MainLayout',
   components: {
@@ -48,7 +50,8 @@ export default {
     TheBed,
     TheBed2,
     TheSport,
-    TheVol
+    TheVol,
+    TheGar
   }
 }
 </script>
