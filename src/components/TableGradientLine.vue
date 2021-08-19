@@ -2,7 +2,7 @@
 <!-- градиентная линия -->
   <div
       class=" tw-flex tw-items-center  "
-      style="width: 100%; height: 80px;"  
+      style="width: 100%; min-height: 80px;"  
       :style="{ background:[colorGradient=='green'? 'linear-gradient(270deg, #00CD77 0%, #6A7186 41.01%)' : colorGradient=='red' ? 'linear-gradient(270deg, #F30101 0%, #6A7186 41.01%)' : '']}"
     >
       <span
@@ -24,7 +24,8 @@ export default {
     text: {
       required: true,
       type: String
-    }
+    },
+    
   },
   data () {
     return {}
@@ -37,6 +38,8 @@ export default {
     line-height: 54.47px;
     font-weight: 400;
     margin-left: 20px;
-    white-space: nowrap;
+    max-width: 64%;
+    padding-bottom: 5px;
+    // white-space: nowrap;
   }
 </style>
