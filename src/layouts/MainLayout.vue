@@ -8,13 +8,15 @@
   <PRODZHIZN3/>
   <PRODZHIZN4/>
   <PRODZHIZN5/>
-  <ZP1/> -->
+   -->
   <!-- <TheBed/> -->
   <!-- <TheBed2/> -->
   <!-- <TheSport/> -->
   <!-- <TheVol/> -->
   <!-- <TheGar/> -->
-  <TheKul/>
+  <!-- <TheKul/> -->
+  <!-- <ZP1/> -->
+  <TheZhi/>
   
   </div>
 </template>
@@ -36,6 +38,7 @@ import TheSport from "components/TheSport";
 import TheVol from "components/TheVol";
 import TheGar from "components/TheGar";
 import TheKul from "components/TheKul";
+import TheZhi from "components/TheZhi";
 export default {
   name: 'MainLayout',
   components: {
@@ -54,7 +57,8 @@ export default {
     TheSport,
     TheVol,
     TheGar,
-    TheKul
+    TheKul,
+    TheZhi
   }
 }
 </script>
