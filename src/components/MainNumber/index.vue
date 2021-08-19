@@ -7,7 +7,8 @@
     
       <span 
       v-if="after"
-      class="after">
+      class="after"
+      :style="{opacity: after==true? 0 : after}">
         <!-- <slot name="after" class="subtitle"></slot> -->
         {{after}}
       </span>
@@ -71,7 +72,7 @@ export default {
     },
     after: {
       required: false,
-      type: String
+      type: String | Boolean
     },
     before: {
       required: false,
@@ -103,7 +104,7 @@ export default {
       font-size: 27px;
       line-height: 27px;
       font-weight: 400;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       margin-left: 6px;
     }
     .before {
