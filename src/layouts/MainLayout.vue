@@ -11,7 +11,8 @@
   <ZP1/> -->
   <!-- <TheBed/> -->
   <!-- <TheBed2/> -->
-  <TheSport/>
+  <!-- <TheSport/> -->
+  <TheVol/>
   
   </div>
 </template>
@@ -30,6 +31,7 @@ import ZP1 from "components/ZP1";
 import TheBed from "components/TheBed";
 import TheBed2 from "components/TheBed2";
 import TheSport from "components/TheSport";
+import TheVol from "components/TheVol";
 export default {
   name: 'MainLayout',
   components: {
@@ -45,7 +47,8 @@ export default {
     ZP1,
     TheBed,
     TheBed2,
-    TheSport
+    TheSport,
+    TheVol
   }
 }
 </script>
