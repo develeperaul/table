@@ -1,6 +1,6 @@
 <template>
   <div>
-  <NAS1 />
+  <!-- <NAS1 />
   <NAS4 />
   <NAS5 />
   <PRODZHIZN1 style="margin-right:100px"/>
@@ -8,7 +8,8 @@
   <PRODZHIZN3/>
   <PRODZHIZN4/>
   <PRODZHIZN5/>
-  <ZP1/>
+  <ZP1/> -->
+  <TheBed/>
   
   </div>
 </template>
@@ -24,6 +25,7 @@ import PRODZHIZN3 from "components/PRODZHIZN3";
 import PRODZHIZN4 from "components/PRODZHIZN4";
 import PRODZHIZN5 from "components/PRODZHIZN5";
 import ZP1 from "components/ZP1";
+import TheBed from "components/TheBed";
 export default {
   name: 'MainLayout',
   components: {
@@ -36,7 +38,8 @@ export default {
     PRODZHIZN3,
     PRODZHIZN4,
     PRODZHIZN5,
-    ZP1
+    ZP1,
+    TheBed
   }
 }
 </script>
