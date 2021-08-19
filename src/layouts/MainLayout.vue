@@ -10,7 +10,8 @@
   <PRODZHIZN5/>
   <ZP1/> -->
   <!-- <TheBed/> -->
-  <TheBed2/>
+  <!-- <TheBed2/> -->
+  <TheSport/>
   
   </div>
 </template>
@@ -28,6 +29,7 @@ import PRODZHIZN5 from "components/PRODZHIZN5";
 import ZP1 from "components/ZP1";
 import TheBed from "components/TheBed";
 import TheBed2 from "components/TheBed2";
+import TheSport from "components/TheSport";
 export default {
   name: 'MainLayout',
   components: {
@@ -42,7 +44,8 @@ export default {
     PRODZHIZN5,
     ZP1,
     TheBed,
-    TheBed2
+    TheBed2,
+    TheSport
   }
 }
 </script>
