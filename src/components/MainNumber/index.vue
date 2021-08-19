@@ -10,7 +10,7 @@
         {{after}}
       </span>
       <span class="tw-text-5xl tw-font-bold title"
-        :style="{color: [color == 'green' ? '#01F859': color == 'red' ? '#FF0000' : '']}">
+        :style="[{color: [color == 'green' ? '#01F859': color == 'red' ? '#FF0000' : color == 'orange' ? '#FF4D00' : '']},{fontSize: fs+'px'}, {lineHeight: lh+'px'}]">
           {{text}}
       
         <img 
@@ -42,7 +42,8 @@ export default {
   name: 'MainNumber',
   props: {
     color: {
-      required: true,
+      required: false,
+      default: '#ffffff',
       type: String
     },
     text: {
@@ -74,6 +75,14 @@ export default {
       required: false,
       type: String
     },
+    fs: {
+      default: '110',
+      type: String
+    },
+    lh: {
+      default: '110',
+      type: String
+    }
 
   }, 
   data () {
