@@ -10,7 +10,7 @@
       <ColumnTable 
       v-for="(item, index) in json"
       :key="index"
-      v-bind="{index, item }"
+      v-bind="{index, item, length: json.length }"
       pb="135"
       >
         <span

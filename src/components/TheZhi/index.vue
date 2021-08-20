@@ -1,7 +1,10 @@
 <template>
   <div class="tw-flex">
     
-      <ColumnTable v-for="(item, index) in json" :key="index" v-bind="{item, index}" >
+      <ColumnTable
+        v-for="(item, index) in json"
+        :key="index"
+        v-bind="{index, item, length: json.length }">
         <span
         class="date">
           {{item.date}}

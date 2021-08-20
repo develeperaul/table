@@ -1,6 +1,6 @@
 <template>
   <div>
-  <!-- <NAS1 />
+  <NAS1 />
   <NAS4 />
   <NAS5 />
   <PRODZHIZN1 style="margin-right:100px"/>
@@ -8,23 +8,25 @@
   <PRODZHIZN3/>
   <PRODZHIZN4/>
   <PRODZHIZN5/>
-   -->
-  <!-- <TheBed/> -->
-  <!-- <TheBed2/> -->
-  <!-- <TheSport/> -->
-  <!-- <TheVol/> -->
-  <!-- <TheGar/> -->
-  <!-- <TheKul/> -->
-  <!-- <ZP1/> -->
-  <!-- <TheZhi/> -->
-  <!-- <TheZhi2/> -->
-  <!-- <TheStr/> -->
-  <!-- <TheStr2/> -->
-  <!-- <TheGor/> -->
+  
+  <TheBed/>
+  <TheBed2/>
+  <TheSport/>
+  <TheVol/>
+  <TheGar/>
+  <TheKul/>
+  <ZP1/>
+  <TheZhi/>
+  <TheZhi2/>
+  <TheStr/>
+  <TheStr2/>
+  <TheGor/>
   <TheOkr/>
-  <!-- <TheOkr2/> -->
-  <!-- <TheDoh/> -->
+  <TheOkr2/>
+  <TheDoh/>
   <TheInv/>
+
+  <ColumnExecute/>
   </div>
 </template>
 
@@ -53,7 +55,11 @@ import TheGor from "components/TheGor";
 import TheOkr from "components/TheOkr";
 import TheOkr2 from "components/TheOkr2";
 import TheDoh from "components/TheDoh";
-import TheInv from "components/TheInv"
+import TheInv from "components/TheInv";
+
+import ColumnExecute from "components/ColumnExecute";
+
+
 export default {
   name: 'MainLayout',
   components: {
@@ -81,7 +87,9 @@ export default {
     TheOkr,
     TheOkr2,
     TheDoh,
-    TheInv
+    TheInv,
+
+    ColumnExecute
   }
 }
 </script>
