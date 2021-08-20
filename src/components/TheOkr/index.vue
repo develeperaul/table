@@ -4,7 +4,7 @@
     <ColumnTable
         v-for="(item, index) in json"
     :key="index"
-    v-bind="{index, item, length: json.length}">
+    v-bind="{index, item, length: json.length, reverse: true}">
       <span
         class="date"
         style="margin-bottom: 50px">
