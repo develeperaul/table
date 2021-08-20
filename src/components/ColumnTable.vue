@@ -4,7 +4,7 @@
 
       class="tw-flex tw-flex-col "
       :class="`tw-w-1/3`"
-      :style="[{background:(index+1)%2==0 ? ' rgba(196, 196, 196, 0.05)' : ''}, {paddingLeft:index>0 ? '30px': ''}, {paddingBottom: `${pb}px`}]"
+      :style="[{background:(index+1)%2==0 ? ' rgba(196, 196, 196, 0.05)' : ''}, {paddingLeft:index>0 ? `${pl}px`: ''}, {paddingBottom: `${pb}px`}]"
       
     >
 
@@ -26,9 +26,14 @@ export default {
     },
     pb: {
       type: String,
-      require: false,
+      required: false,
       default: "55"
-    }
+    },
+    pl: {
+      type: String,
+      required: false,
+      default: "30"
+    },
   },
   // name: 'ComponentName',
   data () {

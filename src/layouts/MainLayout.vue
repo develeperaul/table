@@ -16,8 +16,8 @@
   <!-- <TheGar/> -->
   <!-- <TheKul/> -->
   <!-- <ZP1/> -->
-  <TheZhi/>
-  
+  <!-- <TheZhi/> -->
+  <TheZhi2/>
   </div>
 </template>
 
@@ -39,6 +39,7 @@ import TheVol from "components/TheVol";
 import TheGar from "components/TheGar";
 import TheKul from "components/TheKul";
 import TheZhi from "components/TheZhi";
+import TheZhi2 from "components/TheZhi2";
 export default {
   name: 'MainLayout',
   components: {
@@ -58,7 +59,8 @@ export default {
     TheVol,
     TheGar,
     TheKul,
-    TheZhi
+    TheZhi, 
+    TheZhi2
   }
 }
 </script>
