@@ -20,7 +20,8 @@
   <!-- <TheZhi2/> -->
   <!-- <TheStr/> -->
   <!-- <TheStr2/> -->
-  <TheGor/>
+  <!-- <TheGor/> -->
+  <TheOkr/>
   </div>
 </template>
 
@@ -46,6 +47,7 @@ import TheZhi2 from "components/TheZhi2";
 import TheStr from "components/TheStr";
 import TheStr2 from "components/TheStr2"
 import TheGor from "components/TheGor";
+import TheOkr from "components/TheOkr";
 export default {
   name: 'MainLayout',
   components: {
@@ -69,7 +71,8 @@ export default {
     TheZhi2,
     TheStr,
     TheStr2,
-    TheGor
+    TheGor,
+    TheOkr
   }
 }
 </script>
