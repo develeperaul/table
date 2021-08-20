@@ -38,7 +38,7 @@ export default {
     line-height: 54.47px;
     font-weight: 400;
     margin-left: 20px;
-    max-width: 64%;
+    max-width: 72%;
     padding-bottom: 5px;
     // white-space: nowrap;
   }
