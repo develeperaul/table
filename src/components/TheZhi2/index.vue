@@ -2,7 +2,7 @@
   <div class="tw-flex"
   style="margin-left: 200px">
     
-      <ColumnTable v-for="(item, index) in json" :key="index" v-bind="{item, index}" pl="83">
+      <ColumnTable v-for="(item, index) in json" :key="index" v-bind="{item, index, length: json.length}" pl="83">
         <div>
           <p ref="text" class="text">
             {{item.text}}

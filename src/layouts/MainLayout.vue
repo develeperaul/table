@@ -25,6 +25,7 @@
   <TheOkr2/>
   <TheDoh/>
   <TheInv/>
+  <TheBis/>
 
   <ColumnExecute/>
   </div>
@@ -56,6 +57,7 @@ import TheOkr from "components/TheOkr";
 import TheOkr2 from "components/TheOkr2";
 import TheDoh from "components/TheDoh";
 import TheInv from "components/TheInv";
+import TheBis from "components/TheBis";
 
 import ColumnExecute from "components/ColumnExecute";
 
@@ -88,6 +90,7 @@ export default {
     TheOkr2,
     TheDoh,
     TheInv,
+    TheBis,
 
     ColumnExecute
   }
