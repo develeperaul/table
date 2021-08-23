@@ -13,15 +13,16 @@
         </span>
         <TableGradientLine 
           colorGradient ="green" 
-          text="Совокупный объем выбросов загрязняющих веществ в атмосферный воздух стационарными и передвижными источниками на территории субъекта РФ,  тыс.тонн"
+          text="Число работников юридических лиц"
           :style="{width: `${100*json.length}%`, opacity: index>0 ? '0' : '1'}" />
-          <MainNumber color="green" :text="item.numb1" mt="41" mb="65" trend="down"/>
+          <MainNumber color="green" :text="item.numb1" mt="41" mb="65" />
           <Cell v-bind="{item: item.info, index}"/>
           <TableGradientLine 
           colorGradient ="green" 
-          text="Объем сброса загрязненных сточных вод на территории субъекта РФ"
+          text="Число индивидуальных предпринимателей"
           :style="{width: `${100*json.length}%`, opacity: index>0 ? '0' : '1'}" />  
-          <MainNumber color="green" :text="item.numb2"  mt="41"  trend="down"/>
+          <MainNumber color="green" :text="item.numb2"  mt="41" mb="55"/>
+          <Cell v-bind="{item: item.info2, index}"/>
         <!-- {{'261(10231)'.search(/[(]/)}} -->
       </ColumnTable>
     </div>
@@ -55,15 +56,15 @@ export default {
           numb2: '243,33 ',
           info: [
             {
-              title: 'диоксид серы (SO2)',
+              title: 'Число работников средних предприятий',
               subtitle: '61,312'
             },
             {
-              title: 'оксиды азота (в пересчете на NO2)',
+              title: 'Число работников малых предприятий',
               subtitle: '95,297 '
             },
             {
-              title: 'оксид углерода (CO)',
+              title: 'Число работников микропредприятий предприятий',
               subtitle: '413,363'
             },
             {
@@ -71,6 +72,12 @@ export default {
               subtitle: '173,247 '
             }
           ],
+          info2: [
+            {
+              title: 'Число работников индивидуальных предпринимателей',
+              subtitle: '135,144'
+            },
+          ]
         },
         {
           date: '2019',
@@ -91,6 +98,11 @@ export default {
             },
 
           ],
+          info2: [
+            {
+              subtitle: '135,144'
+            },
+          ]
         },
         {
           date: '2020',
@@ -110,6 +122,11 @@ export default {
               subtitle: '135,144'
             },
           ],
+          info2: [
+            {
+              subtitle: '135,144'
+            },
+          ]
         },
       ]
     }
