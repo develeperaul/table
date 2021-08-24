@@ -9,11 +9,10 @@
       v-if="after"
       class="after"
       :style="{opacity: after==true? 0 : after}">
-        <!-- <slot name="after" class="subtitle"></slot> -->
         {{after}}
       </span>
         
-      <span class="tw-text-5xl tw-font-bold title"
+      <span class="tw-text-5xl tw-font-bold title tw-whitespace-nowrap"
         :style="[{color: [color == 'green' ? '#01F859': color == 'red' ? '#FF0000' : color == 'orange' ? '#FF4D00' : '']},{fontSize: fs+'px'}, {lineHeight: lh+'px'}]">
           {{text}}
       
@@ -51,7 +50,7 @@ export default {
     },
     text: {
       default: '-',
-      type: String
+      type: String | Number
     },
     mt: {
       default: '0',

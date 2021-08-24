@@ -13,8 +13,8 @@
       :style="{marginLeft:[index>0 ? '-30px': '']}"/>
       </span>
 
-      <MainNumber color="green" text="46541651" mb="35" after="план"/>  
-      <MainNumber color="green" text="46541651" mb="35" execution="failed" after="факт"/>  
+      <MainNumber color="green" text="72,64" mb="35" after="план"/>  
+      <MainNumber color="green" text="72,64" mb="35" execution="failed" after="факт"/>  
 
       <div class="tw-w-full tw-relative">
         <TableGradientLine v-if="index<1" colorGradient="green"

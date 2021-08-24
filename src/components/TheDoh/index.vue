@@ -23,7 +23,7 @@
             text="Среднемесячная начисленная заработная плата"
             :style="{width: `${100*json.length}%`, opacity: index>0 ? '0' : '1'}" />
           
-          <MainNumber :text="item.numb2"/>
+          <MainNumber :text="item.numb2" color="orange"/>
       </ColumnTable>
     </div>
   </div>

@@ -23,6 +23,7 @@
         v-for="(item, index) in json"
         :key="index"
         v-bind="{index, item, length: json.length }"
+        class="tw-flex tw-flex-col tw-justify-between"
       > 
       <span class="date">
         {{item.date}}
