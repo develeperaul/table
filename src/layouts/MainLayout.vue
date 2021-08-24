@@ -28,7 +28,7 @@
   <TheBis/>
   <TheBis2/>
 
-  <ColumnExecute/>
+  
   </div>
 </template>
 
@@ -60,7 +60,7 @@ import TheDoh from "components/TheDoh";
 import TheInv from "components/TheInv";
 import TheBis from "components/TheBis";
 import TheBis2 from "components/TheBis2";
-import ColumnExecute from "components/ColumnExecute";
+
 
 
 export default {
@@ -94,7 +94,7 @@ export default {
     TheBis,
     TheBis2,
 
-    ColumnExecute
+     
   }
 }
 </script>
